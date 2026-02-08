@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Full Stack Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="projects-page">
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <span class="page-label">My Work</span>
+                <h1 class="page-title">Projects</h1>
+                <p class="page-description">
+                    A collection of web applications, tools, and experiments 
+                    showcasing my approach to solving complex problems.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects-filter">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+                <button class="filter-btn" data-filter="opensource">Open Source</button>
+            </div>
+        </section>
+
+        <section class="all-projects">
+            <div class="projects-list">
+                <article class="project-detail" data-category="web">
+                    <div class="project-visual">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="placeholder-icon">🛍️</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-category">Web Application</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h2 class="project-name">E-Commerce Platform</h2>
+                        </div>
+                        <p class="project-full-description">
+                            Built a comprehensive e-commerce solution from the ground up, featuring 
+                            real-time inventory management, secure payment processing with Stripe, 
+                            advanced product search with Elasticsearch, and an admin dashboard for 
+                            order management. Implemented server-side rendering for optimal SEO and 
+                            performance, achieving 95+ Lighthouse scores.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <strong>Challenge:</strong> Handle high traffic during sales events
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Solution:</strong> Implemented Redis caching and database query optimization
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Result:</strong> 60% reduction in page load times, 99.9% uptime
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Stripe API</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Live Site →</a>
+                            <a href="#" class="project-link">View Code →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-detail" data-category="dashboard">
+                    <div class="project-visual">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="placeholder-icon">📊</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-category">Analytics Dashboard</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h2 class="project-name">Real-Time Analytics Platform</h2>
+                        </div>
+                        <p class="project-full-description">
+                            Developed an enterprise-grade analytics platform with interactive data 
+                            visualizations, customizable dashboards, and real-time updates via WebSockets. 
+                            Users can create custom reports, set up alerts, and export data in multiple formats. 
+                            The application processes millions of data points daily with sub-second query times.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <strong>Challenge:</strong> Display complex data sets without performance degradation
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Solution:</strong> Virtual scrolling, data aggregation, and chart optimization
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Result:</strong> Smooth 60fps interactions with 100k+ data points
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo →</a>
+                            <a href="#" class="project-link">Case Study →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-detail" data-category="mobile">
+                    <div class="project-visual">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="placeholder-icon">📱</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-category">Mobile Application</span>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <h2 class="project-name">Task Management App</h2>
+                        </div>
+                        <p class="project-full-description">
+                            Cross-platform productivity application built with React Native, featuring 
+                            offline-first architecture, cloud synchronization, push notifications, and 
+                            collaboration features. Implements drag-and-drop task organization, recurring 
+                            tasks, attachments, and time tracking. Available on iOS and Android.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <strong>Challenge:</strong> Ensure seamless offline/online data sync
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Solution:</strong> Conflict resolution algorithm and local-first architecture
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Result:</strong> Zero data loss, 4.8★ rating with 50k+ downloads
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">AsyncStorage</span>
+                            <span class="tag">Push Notifications</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">App Store →</a>
+                            <a href="#" class="project-link">Google Play →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-detail" data-category="web">
+                    <div class="project-visual">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <div class="placeholder-icon">🎨</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-category">SaaS Platform</span>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <h2 class="project-name">Design Collaboration Tool</h2>
+                        </div>
+                        <p class="project-full-description">
+                            A collaborative design platform enabling teams to create, share, and iterate 
+                            on design mockups in real-time. Features include canvas-based editing, 
+                            commenting system, version control, and team management. Built with scalability 
+                            in mind to handle hundreds of concurrent users.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <strong>Challenge:</strong> Real-time collaboration without conflicts
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Solution:</strong> Operational transformation and CRDT data structures
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Result:</strong> Sub-100ms latency, Google Docs-like experience
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Canvas API</span>
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Live →</a>
+                            <a href="#" class="project-link">Documentation →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-detail" data-category="opensource">
+                    <div class="project-visual">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <div class="placeholder-icon">🔧</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-category">Open Source</span>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <h2 class="project-name">React Component Library</h2>
+                        </div>
+                        <p class="project-full-description">
+                            Open-source UI component library with 50+ accessible, customizable React 
+                            components. Fully typed with TypeScript, includes comprehensive documentation, 
+                            Storybook examples, and follows WAI-ARIA standards. Used by over 1,000 
+                            developers and actively maintained.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <strong>Features:</strong> Tree-shakeable, theme support, dark mode
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Testing:</strong> 95% code coverage with Jest and Testing Library
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Community:</strong> 2.5k GitHub stars, 150+ contributors
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Storybook</span>
+                            <span class="tag">Rollup</span>
+                            <span class="tag">CSS-in-JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub Repo →</a>
+                            <a href="#" class="project-link">NPM Package →</a>
+                            <a href="#" class="project-link">Documentation →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-detail" data-category="web dashboard">
+                    <div class="project-visual">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <div class="placeholder-icon">🏥</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-meta">
+                                <span class="project-category">Healthcare Platform</span>
+                                <span class="project-year">2022</span>
+                            </div>
+                            <h2 class="project-name">Patient Portal</h2>
+                        </div>
+                        <p class="project-full-description">
+                            HIPAA-compliant patient portal for a healthcare provider network. Patients 
+                            can view medical records, schedule appointments, message providers, and 
+                            access test results. Implements role-based access control, audit logging, 
+                            and encrypted data transmission.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <strong>Security:</strong> End-to-end encryption, SOC 2 compliance
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Scale:</strong> Serves 100k+ patients across 50+ clinics
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Impact:</strong> 40% reduction in phone call volume
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Java Spring</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">OAuth 2.0</span>
+                            <span class="tag">FHIR API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Case Study →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" class="social-link">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" class="social-link">LinkedIn</a>
+                    <a href="https://twitter.com/yourusername" class="social-link">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <div class="footer-links">
+                    <a href="projects.html" class="footer-link">Projects</a>
+                    <a href="skills.html" class="footer-link">Skills</a>
+                    <a href="experience.html" class="footer-link">Experience</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p class="footer-copyright">© 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

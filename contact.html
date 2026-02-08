@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Full Stack Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <span class="page-label">Get In Touch</span>
+                <h1 class="page-title">Let's Connect</h1>
+                <p class="page-description">
+                    Have a project in mind or just want to chat? I'd love to hear from you.
+                    Feel free to reach out through any of the channels below.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-subtitle">Contact Information</h2>
+                    <p class="info-description">
+                        I'm currently available for freelance projects and full-time opportunities. 
+                        I typically respond within 24 hours.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-content">
+                                <h3 class="method-title">Email</h3>
+                                <a href="mailto:danitechsoftwaresdev@gmail.com" class="method-link">your.email@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">💼</div>
+                            <div class="method-content">
+                                <h3 class="method-title">LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/daniel-maina-7706542a0" target="_blank" class="method-link">linkedin.com/in/yourusername</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">💻</div>
+                            <div class="method-content">
+                                <h3 class="method-title">GitHub</h3>
+                                <a href="https://github.com/danitech887" target="_blank" class="method-link">github.com/yourusername</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">🐦</div>
+                            <div class="method-content">
+                                <h3 class="method-title">Twitter</h3>
+                                <a href="https://twitter.com/yourusername" target="_blank" class="method-link">@yourusername</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-content">
+                                <h3 class="method-title">Location</h3>
+                                <p class="method-text">Nairobi, Kenya (Open to Remote)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h3 class="availability-title">Current Availability</h3>
+                        <div class="availability-status">
+                            <span class="status-indicator"></span>
+                            <span class="status-text">Available for new projects</span>
+                        </div>
+                        <p class="availability-note">
+                            I'm currently taking on select freelance projects and considering 
+                            full-time opportunities with innovative companies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2 class="section-subtitle">Send a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                placeholder="Your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="your.email@example.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                class="form-input" 
+                                placeholder="What's this about?"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-textarea" 
+                                rows="6" 
+                                placeholder="Tell me about your project or inquiry..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                        </button>
+
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <h2 class="section-title">Connect With Me</h2>
+            <p class="section-description">
+                Follow me on social media to stay updated with my latest projects, 
+                articles, and tech insights.
+            </p>
+            <div class="social-cards">
+                <a href="https://github.com/danitech887 " target="_blank" class="social-card">
+                    <div class="social-card-icon">💻</div>
+                    <h3 class="social-card-title">GitHub</h3>
+                    <p class="social-card-description">Check out my open source projects and contributions</p>
+                    <span class="social-card-link">View Profile →</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/daniel-maina-7706542a0" target="_blank" class="social-card">
+                    <div class="social-card-icon">💼</div>
+                    <h3 class="social-card-title">LinkedIn</h3>
+                    <p class="social-card-description">Connect professionally and see my career journey</p>
+                    <span class="social-card-link">Connect →</span>
+                </a>
+
+                <a href="https://twitter.com/yourusername" target="_blank" class="social-card">
+                    <div class="social-card-icon">🐦</div>
+                    <h3 class="social-card-title">Twitter</h3>
+                    <p class="social-card-description">Follow for tech updates and industry insights</p>
+                    <span class="social-card-link">Follow →</span>
+                </a>
+
+                <a href="https://medium.com/@yourusername" target="_blank" class="social-card">
+                    <div class="social-card-icon">✍️</div>
+                    <h3 class="social-card-title">Medium</h3>
+                    <p class="social-card-description">Read my technical articles and tutorials</p>
+                    <span class="social-card-link">Read Articles →</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" class="social-link">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" class="social-link">LinkedIn</a>
+                    <a href="https://twitter.com/yourusername" class="social-link">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <div class="footer-links">
+                    <a href="projects.html" class="footer-link">Projects</a>
+                    <a href="skills.html" class="footer-link">Skills</a>
+                    <a href="experience.html" class="footer-link">Experience</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p class="footer-copyright">© 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
