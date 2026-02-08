@@ -1,3 +1,4 @@
+
 # Full Stack Software Engineer Portfolio
 
 A modern, responsive multi-page portfolio website built with HTML, CSS, and JavaScript. Features an editorial-inspired design with smooth animations and interactive elements.
@@ -196,3 +197,5 @@ If you encounter any issues:
 **Good luck with your portfolio! 🚀**
 
 Remember to replace all placeholder content with your own information and projects to make it truly yours.
+# portfolio
+Portfolio
